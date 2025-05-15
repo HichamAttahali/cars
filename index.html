@@ -1,14 +1,105 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SallCars - Premium Automotive Dealership</title>
-    <meta name="description" content="SallCars is a premium automotive dealership offering high-quality vehicles and exceptional customer service. Browse our inventory today.">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="SallCars Logo">
+            <span>SallCars</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#inventory">Inventory</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="menu-btn">☰</button>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Find Your Perfect Drive</h1>
+            <p>Explore our exclusive collection of premium vehicles</p>
+            <a href="#inventory" class="cta-button">Browse Inventory</a>
+        </div>
+    </header>
+
+    <section id="inventory" class="inventory">
+        <h2>Featured Vehicles</h2>
+        <div class="car-grid" id="carGrid">
+            <!-- Cars will be added here by JavaScript -->
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About SallCars</h2>
+        <div class="about-content">
+            <img src="images/dealership.jpg" alt="Our Dealership">
+            <div class="about-text">
+                <p>SallCars is your premier destination for quality vehicles. With years of experience in the automotive industry, we pride ourselves on offering exceptional service and premium cars to meet your needs.</p>
+                <ul class="features">
+                    <li>Premium Selection</li>
+                    <li>Expert Service</li>
+                    <li>Competitive Pricing</li>
+                    <li>Quality Guarantee</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <form id="contactForm" class="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone">
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <h3>Visit Us</h3>
+                <p>123 Automotive Drive</p>
+                <p>San Francisco, CA 94103</p>
+                <h3>Business Hours</h3>
+                <p>Monday - Friday: 9AM - 6PM</p>
+                <p>Saturday: 10AM - 4PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SallCars</h3>
+                <p>Your trusted partner in finding the perfect vehicle.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#inventory">Inventory</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Phone: (555) 123-4567</p>
+                <p>Email: info@sallcars.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SallCars. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
 </html>
